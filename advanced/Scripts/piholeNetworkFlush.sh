@@ -36,7 +36,7 @@ flushNetwork(){
     LoginAPI
 
     # send query again
-    data=$(PostFTLData "action/flush/arp" "" "status")
+    data=$(PostFTLData "action/flush/network" "" "status")
 
     # Separate the status from the data
     status=$(printf %s "${data#"${data%???}"}")
